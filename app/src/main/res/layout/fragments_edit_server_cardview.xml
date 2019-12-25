@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_edit_server_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+    android:layout_marginTop="@dimen/mtrl_card_spacing"
+    android:layout_marginRight="@dimen/mtrl_card_spacing"
+    android:layout_marginBottom="@dimen/mtrl_card_spacing"
+    android:orientation="vertical">
+
+    <!-- Server name -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/colorSurface"
+        app:hintTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_edit_server_name"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="FTP Server"
+            android:hint="@string/text_edit_server_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Server IP editress -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/colorSurface"
+        app:hintTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_edit_server_address"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/text_edit_server_address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Server port address -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/colorSurface"
+        app:hintTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:helperTextEnabled="true"
+        app:helperText="Default: 21"
+        android:layout_marginBottom="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_edit_server_port"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="21"
+            android:hint="@string/text_edit_server_port" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_edit_server_username_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/colorSurface"
+        app:hintTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_edit_server_username"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/text_edit_server_username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_edit_server_password_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:boxBackgroundColor="@color/colorSurface"
+        app:hintTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_edit_server_password"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:hint="@string/text_edit_server_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Auto-connect checkbox -->
+    <CheckBox
+        android:id="@+id/layout_edit_server_anonymous_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/element_margin"
+        android:text="@string/text_edit_server_anonymous" />
+
+    <!-- Auto-connect checkbox -->
+    <CheckBox
+        android:id="@+id/layout_edit_server_active_mode_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/element_margin"
+        android:text="@string/text_edit_server_active_mode" />
+
+    <!-- Connect button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/layout_edit_server_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/element_margin"
+        android:text="@string/text_edit_server_button" />
+</LinearLayout>

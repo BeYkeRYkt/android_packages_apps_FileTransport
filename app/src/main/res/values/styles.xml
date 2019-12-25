@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Main theme -->
+    <style name="Theme.Main" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="Theme.Main.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+    </style>
+
+    <style name="Theme.Main.NoActionBar" parent="Theme.Main">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Action Bar -->
+    <style name="Theme.Main.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar"></style>
+
+    <style name="Theme.Main.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <!-- Text -->
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+</resources>

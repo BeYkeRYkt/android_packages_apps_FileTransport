@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragments_explorer_swipe_refresh_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Folder path name -->
+        <LinearLayout
+            android:id="@+id/fragments_explorer_folder_path_layout"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginBottom="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                    android:layout_marginTop="@dimen/mtrl_card_spacing"
+                    android:layout_marginRight="@dimen/mtrl_card_spacing"
+                    android:layout_marginBottom="@dimen/mtrl_card_spacing"
+                    android:orientation="vertical">
+
+                    <!-- Folder path label -->
+                    <TextView
+                        android:id="@+id/fragments_explorer_folder_path_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:text="@string/text_explorer_path"
+                        android:textAlignment="viewStart" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/mtrl_card_spacing">
+
+                        <!-- Folder path -->
+                        <TextView
+                            android:id="@+id/fragments_explorer_folder_path_path"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:layout_centerVertical="true"
+                            android:text="/"
+                            android:textAlignment="viewStart" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- File list -->
+        <LinearLayout
+            android:id="@+id/fragments_explorer_cardview_layout"
+            android:layout_below="@id/fragments_explorer_folder_path_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- File list -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fragments_explorer_cardview"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:layout_marginBottom="@dimen/mtrl_card_spacing">
+
+                <!-- ProgressBar -->
+                <FrameLayout
+                    android:id="@+id/fragments_explorer_progressBar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/fragments_explorer_progressBar"
+                        style="@style/Widget.AppCompat.ProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragments_explorer_recycler_view_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragments_explorer_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        android:paddingTop="@dimen/mtrl_card_spacing" />
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

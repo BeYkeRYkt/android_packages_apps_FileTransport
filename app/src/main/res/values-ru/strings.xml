@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- OK/Cancel -->
+    <string name="text_default_ok">Ок</string>
+    <string name="text_default_cancel">Отмена</string>
+
+    <!-- Yes / No -->
+    <string name="text_default_yes">Да</string>
+    <string name="text_default_no">Нет</string>
+
+    <!-- Main Activity -->
+    <string name="text_title_activity_home">@string/app_name</string>
+    <string name="text_navigation_drawer_open">Open navigation drawer</string>
+    <string name="text_navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navheader -->
+    <string name="text_nav_header_title">@string/app_name</string>
+    <string name="text_nav_header_subtitle">beykerykt@devinside.org</string>
+    <string name="text_nav_header_desc">Navigation header</string>
+
+    <!-- Navheader menu items -->
+    <string name="text_menu_servers">Сервера</string>
+    <string name="text_menu_add_server">Добавить сервер</string>
+    <string name="text_menu_edit_server">Редактировать сервер</string>
+    <string name="text_menu_explorer">Explorer</string>
+    <string name="text_menu_settings">Настройки</string>
+
+    <!-- EditServer fragment -->
+    <string name="text_edit_server_name">Имя сервера</string>
+    <string name="text_edit_server_address">Адрес сервера</string>
+    <string name="text_edit_server_port">Порт</string>
+    <string name="text_edit_server_anonymous">Аноним</string>
+    <string name="text_edit_server_username">Логин</string>
+    <string name="text_edit_server_password">Пароль</string>
+    <string name="text_edit_server_active_mode">Активный режим</string>
+    <string name="text_edit_server_button">Сохранить сервер</string>
+
+    <!-- ServerList fragment -->
+    <string name="text_server_list_server_available">Сервер доступен</string>
+    <string name="text_server_list_server_not_available">Сервер недоступен</string>
+    <string name="text_server_list_server_checking">Проверка...</string>
+    <string name="text_server_list_server_server_connect_timeout">Превышен лимит ожидания</string>
+    <string name="text_server_list_server_server_connect_failed">Ошибка соединения</string>
+    <string name="text_server_list_server_server_connect_wrong_host">Неверный адрес</string>
+
+    <string name="text_server_list_server_auth_failed">Ошибка авторизации</string>
+    <string name="text_server_list_server_auth_success">Авторизация прошла успешно</string>
+    <string name="text_server_list_server_auth_login">Авторизация...</string>
+    <string name="text_server_list_server_auth_disconnected">Отсоединен</string>
+    <string name="text_server_list_server_auth_connect_timeout">Превышен лимит ожидания</string>
+    <string name="text_server_list_server_auth_connect_failed">Ошибка соединения</string>
+
+    <string name="text_server_list_buttons_download">Скачать</string>
+    <string name="text_server_list_buttons_upload">Загрузить</string>
+
+    <string name="text_server_list_menu_autocheck">Autocheck</string>
+
+    <!-- Server list item Popup -->
+    <string name="text_server_list_popup_check">Проверить статус</string>
+    <string name="text_server_list_popup_edit">Изменить</string>
+    <string name="text_server_list_popup_delete">Удалить</string>
+
+    <!-- Exit Toast -->
+    <string name="text_toast_exit">Нажмите еще раз, чтобы выйти из приложения</string>
+
+    <!-- Permissions Toast -->
+    <string name="text_toast_allow_access_permission">Разрешите доступ к внутреннему хранилищу для дальнейшей работы</string>
+
+    <!-- Alert Dialogs ( Download ) -->
+    <string name="text_alertdialog_download_title">Скачивание</string>
+    <string name="text_alertdialog_download_message">Вы уверены что хотите это скачать ? Файл будет сохранен в папке: Download</string>
+    <string name="text_alertdialog_download_progress_message">Выполняется скачивание файла %FILE% в папку %FOLDER%</string>
+
+    <!-- Alert Dialogs ( Upload ) -->
+    <string name="text_alertdialog_upload_title">Загрузка</string>
+    <string name="text_alertdialog_upload_message">Вы уверены что хотите загрузить этот файл в папку %PATH% ?</string>
+    <string name="text_alertdialog_upload_progress_message">Выполняется загрузка файла %FILE% в папку %FOLDER%</string>
+
+    <!-- Download/Upload -->
+    <string name="text_menu_download">Скачать</string>
+    <string name="text_menu_upload">Загрузить</string>
+
+    <!-- Explorer Fragment -->
+    <string name="text_explorer_path">Путь</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_servers"
+            android:icon="@drawable/ic_menu_servers"
+            android:title="@string/text_menu_servers" />
+        <item
+            android:id="@+id/nav_add_server"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/text_menu_add_server" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/text_menu_settings" />
+    </group>
+
+    <!--
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item> -->
+
+</menu>

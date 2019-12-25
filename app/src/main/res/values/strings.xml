@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- AppName -->
+    <string name="app_name" translatable="false">FileTransport</string>
+
+    <!-- OK/Cancel -->
+    <string name="text_default_ok">OK</string>
+    <string name="text_default_cancel">Cancel</string>
+
+    <!-- Yes / No -->
+    <string name="text_default_yes">Yes</string>
+    <string name="text_default_no">No</string>
+
+    <!-- Main Activity -->
+    <string name="text_title_activity_home">@string/app_name</string>
+    <string name="text_navigation_drawer_open">Open navigation drawer</string>
+    <string name="text_navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navheader -->
+    <string name="text_nav_header_title">@string/app_name</string>
+    <string name="text_nav_header_subtitle">beykerykt@devinside.org</string>
+    <string name="text_nav_header_desc">Navigation header</string>
+
+    <!-- Navheader menu items -->
+    <string name="text_menu_servers">Servers</string>
+    <string name="text_menu_add_server">Add server</string>
+    <string name="text_menu_edit_server">Edit server</string>
+    <string name="text_menu_explorer">Explorer</string>
+    <string name="text_menu_settings">Settings</string>
+
+    <!-- EditServer fragment -->
+    <string name="text_edit_server_name">Server name</string>
+    <string name="text_edit_server_address">Server IP address</string>
+    <string name="text_edit_server_port">Port</string>
+    <string name="text_edit_server_anonymous">Anonymous</string>
+    <string name="text_edit_server_username">Username</string>
+    <string name="text_edit_server_password">Password</string>
+    <string name="text_edit_server_active_mode">Active mode</string>
+    <string name="text_edit_server_button">Save server</string>
+
+    <!-- ServerList fragment -->
+    <string name="text_server_list_server_available">Server is available</string>
+    <string name="text_server_list_server_not_available">Server is not available</string>
+    <string name="text_server_list_server_checking">Checking...</string>
+    <string name="text_server_list_server_server_connect_timeout">Connection timeout</string>
+    <string name="text_server_list_server_server_connect_failed">Connection failed</string>
+    <string name="text_server_list_server_server_connect_wrong_host">Wrong host</string>
+
+    <string name="text_server_list_server_auth_failed">Auth failed</string>
+    <string name="text_server_list_server_auth_success">Auth success</string>
+    <string name="text_server_list_server_auth_login">Log in...</string>
+    <string name="text_server_list_server_auth_disconnected">Disconnected</string>
+    <string name="text_server_list_server_auth_connect_timeout">Connection timeout</string>
+    <string name="text_server_list_server_auth_connect_failed">Connection failed</string>
+
+    <string name="text_server_list_buttons_download">Download</string>
+    <string name="text_server_list_buttons_upload">Upload</string>
+
+    <string name="text_server_list_menu_autocheck">Autocheck</string>
+
+    <!-- Server list item Popup -->
+    <string name="text_server_list_popup_check">Check status</string>
+    <string name="text_server_list_popup_edit">Edit</string>
+    <string name="text_server_list_popup_delete">Delete</string>
+
+    <!-- Exit Toast -->
+    <string name="text_toast_exit">Please click BACK again to exit</string>
+
+    <!-- Permissions Toast -->
+    <string name="text_toast_allow_access_permission">Allow access to internal storage for further work</string>
+
+    <!-- Alert Dialogs ( Download ) -->
+    <string name="text_alertdialog_download_title">Download</string>
+    <string name="text_alertdialog_download_message">Are you sure you are going to download it ? The file will be saved in folder: Download</string>
+    <string name="text_alertdialog_download_progress_message">Downloading %FILE% to %FOLDER%</string>
+
+    <!-- Alert Dialogs ( Upload ) -->
+    <string name="text_alertdialog_upload_title">Upload</string>
+    <string name="text_alertdialog_upload_message">Are you sure you are going to upload it to the %PATH% ?</string>
+    <string name="text_alertdialog_upload_progress_message">Uploading %FILE% to %FOLDER%</string>
+
+    <!-- Download/Upload -->
+    <string name="text_menu_download">Download</string>
+    <string name="text_menu_upload">Upload</string>
+
+    <!-- Explorer Fragment -->
+    <string name="text_explorer_path">Path</string>
+</resources>

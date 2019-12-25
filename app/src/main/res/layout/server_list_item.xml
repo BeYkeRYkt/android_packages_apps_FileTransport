@@ -1,0 +1,112 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:id="@+id/server_list_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+    android:layout_marginTop="@dimen/mtrl_card_spacing"
+    android:layout_marginRight="@dimen/mtrl_card_spacing"
+    android:layout_marginBottom="@dimen/mtrl_card_spacing"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/server_list_card_view_icon"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerInside"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_menu_servers" />
+
+            <ImageButton
+                android:id="@+id/server_list_card_view_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                style="?android:attr/actionOverflowButtonStyle" />
+
+            <!-- Description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/server_list_card_view_icon"
+                android:layout_toStartOf="@id/server_list_card_view_dots"
+                android:orientation="vertical">
+
+                <!-- Server name -->
+                <TextView
+                    android:id="@+id/server_list_card_view_server_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:textAlignment="viewStart" />
+
+                <!-- Server address/port -->
+                <TextView
+                    android:id="@+id/server_list_card_view_server_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart" />
+
+                <!-- Server status -->
+                <LinearLayout
+                    android:id="@+id/server_list_card_view_server_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/server_list_card_view_icon"
+                    android:layout_toStartOf="@id/server_list_card_view_dots"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <!-- Progress Bar -->
+                    <ProgressBar
+                        android:id="@+id/server_list_card_view_server_status_progressBar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <!-- Server status -->
+                    <TextView
+                        android:id="@+id/server_list_card_view_server_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

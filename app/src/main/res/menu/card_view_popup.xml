@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/card_view_action_check"
+        android:orderInCategory="100"
+        android:title="@string/text_server_list_popup_check"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/card_view_action_edit"
+        android:orderInCategory="200"
+        android:title="@string/text_server_list_popup_edit"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/card_view_action_delete"
+        android:orderInCategory="300"
+        android:title="@string/text_server_list_popup_delete"
+        app:showAsAction="never" />
+</menu>

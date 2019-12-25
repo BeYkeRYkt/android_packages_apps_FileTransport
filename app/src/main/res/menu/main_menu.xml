@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_action_autocheck_checkbox"
+        android:orderInCategory="100"
+        android:title="@string/text_server_list_menu_autocheck"
+        app:showAsAction="never"
+        android:checkable="true" />
+</menu>
